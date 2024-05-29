@@ -6,8 +6,8 @@ const Header = () => {
     return (
         <div className="gpt3__header section__padding">
             <div className="gpt3__header-content">
-                <h1 className="gradient__text">Let's Build Something amazing with GPT-3 OpenAI</h1>
-                <p>We help buisnesses of all sizes to gain revenue and increase their revenue.</p>
+                <h1 className="gradient__text">Let's Create Amazing Music with Professional Mixing and Mastering</h1>
+                <p>We help artists and producers to achieve top-notch sound quality and elevate their music</p>
                 <div className="gpt3__header-content__input">
                     <input type="email" placeholder="Your Email Address" />
                     <button type="button">Get Started</button>

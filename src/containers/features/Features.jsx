@@ -4,20 +4,20 @@ import './features.css';
 
 const featuresData = [
     {
-        title: 'Improving end distrusts instantly',
-        text: 'From they fine john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.'
+        title: 'Enhance Your Mix Instantly',
+        text: 'Our mixing services bring clarity and balance to your tracks, ensuring every element shines through. Experience the difference professional mixing can make.'
     },
     {
-        title: 'Become the tended active',
-        text: 'Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.'
+        title: 'Achieve Perfect Mastering',
+        text: 'Our mastering services provide the final polish your music needs, making it sound great on all platforms. Let us help you achieve industry-standard sound quality.'
     },
     {
-        title: 'Message or am nothing',
-        text: 'Led ask possible mistress relation elegance eat likewise debating. By message or am nothing amongst chiefly address.'
+        title: 'Personalized Consultation',
+        text: 'Receive expert advice tailored to your music production needs. Our consultations help you make informed decisions to enhance your sound.'
     },
     {
-        title: 'Really boy law county',
-        text: 'Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now. In built table in-Assistant.'
+        title: 'Cutting-Edge Technology',
+        text: 'Utilize the latest in music production technology to bring your creative vision to life. Our state-of-the-art equipment ensures top-notch results.'
     }
 ];
 
@@ -25,7 +25,7 @@ const Features = () => {
     return (
         <div className="gpt3__features section__padding" id="features">
             <div className="gpt3__features-heading">
-                <h1 className="gradient__text">The Future is Now and You Just Need To Realize It. Step into Future Today. & Make it Happen.</h1>
+                <h1 className="gradient__text">Transform Your Music Today. Step into the Future of Sound with Our Professional Services.</h1>
                 <p>Request Early Access to Get Started</p>
             </div>
             <div className="gpt3__features-container">

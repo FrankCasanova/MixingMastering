@@ -10,13 +10,13 @@ const Blog = () => (
     </div>
     <div className="gpt3__blog-container">
       <div className="gpt3__blog-container_groupA">
-        <Article imgUrl={blog01} date="Sep 26, 2021" text="GPT-3 and Open  AI is the future. Let us exlore how it is?" />
+      <Article imgUrl={blog01} date="Sep 26, 2021" text="The Future of Music Production: Mixing and Mastering" />
       </div>
       <div className="gpt3__blog-container_groupB">
-        <Article imgUrl={blog02} date="Sep 26, 2021" text="How they make us who we are" />
-        <Article imgUrl={blog03} date="Nov 02, 2022" text="What's the best part of Open AI" />
-        <Article imgUrl={blog04} date="Jan 12, 2023" text=" You can't trust them" />
-        <Article imgUrl={blog05} date="Aug 28, 2023" text=" Maybe you're amazing at it" />
+        <Article imgUrl={blog02} date="Sep 26, 2021" text="Top 10 Tips for Perfect Mixes" />
+        <Article imgUrl={blog03} date="Nov 02, 2022" text="Mastering Techniques You Need to Know" />
+        <Article imgUrl={blog04} date="Jan 12, 2023" text="Common Mixing Mistakes to Avoid" />
+        <Article imgUrl={blog05} date="Aug 28, 2023" text="How to Get the Best Sound from Your Home Studio" />
       </div>
     </div>
   </div>
