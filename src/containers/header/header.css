@@ -82,7 +82,7 @@
     font-size: 20px;
     line-height: 28px;
     background: #FF4820;
-    border: 2px solid #FF4820;
+    border: none;
     padding: 0 1rem;
     color: #fff;
     cursor: pointer;
@@ -94,8 +94,8 @@
 }
 
 .gpt3__header-content__input button:hover {
-    background: #e0411d;
-    transform: scale(1.05);
+    background: #ffffff;
+    color: #031b34;
 }
 
 .gpt3__header-content__people {
