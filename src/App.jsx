@@ -1,8 +1,8 @@
 import React from 'react'
 import { useEffect } from "react";
-import clickMenuSound from '/public/clickMenu.mp3';
-import clickButtonSound from '/public/clickButton.mp3';
-import backGroundMusic from '/public/backGroundMusic.mp3';
+import clickMenuSound from '/clickMenu.mp3';
+import clickButtonSound from '/clickButton.mp3';
+import backGroundMusic from '/backGroundMusic.mp3';
 import { Footer, Header, WhatIaWebpage, Features, Possibility, Blog } from './containers';
 import { Brand, Cta, Navbar } from './components';
 

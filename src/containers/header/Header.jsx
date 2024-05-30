@@ -1,7 +1,7 @@
 import React from "react";
 import "./header.css";
 import people from "../../assets/people.png";
-import mixing from "/public/mixingComp.mp4";
+import mixing from "/mixingComp.mp4";
 const Header = () => {
     return (
         <div className="gpt3__header section__padding">
