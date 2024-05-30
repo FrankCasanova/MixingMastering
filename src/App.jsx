@@ -1,8 +1,8 @@
 import React from 'react'
 import { useEffect } from "react";
-import clickMenuSound from './assets/sounds/clickMenu.mp3';
-import clickButtonSound from './assets/sounds/clickButton.mp3';
-import backGroundMusic from './assets/sounds/backGroundMusic.mp3';
+import clickMenuSound from '/public/clickMenu.mp3';
+import clickButtonSound from '/public/clickButton.mp3';
+import backGroundMusic from '/public/backGroundMusic.mp3';
 import { Footer, Header, WhatIaWebpage, Features, Possibility, Blog } from './containers';
 import { Brand, Cta, Navbar } from './components';
 
@@ -38,12 +38,24 @@ const App = () => {
     const backgroundMusic = new Audio(backGroundMusic);
     backgroundMusic.volume = 0.2; // Adjust the volume as needed
     backgroundMusic.loop = false; // Enable looping
-    backgroundMusic.play();
 
-    // Cleanup background music when the component unmounts
+    const startBackgroundMusic = () => {
+      backgroundMusic.play().catch(error => {
+        console.error('Failed to play background music:', error);
+      });
+
+      // Remove event listener after first interaction
+      document.removeEventListener('click', startBackgroundMusic);
+    };
+
+    // Add event listener for user interaction
+    document.addEventListener('click', startBackgroundMusic);
+
+    // Cleanup on component unmount
     return () => {
       backgroundMusic.pause();
       backgroundMusic.currentTime = 0;
+      document.removeEventListener('click', startBackgroundMusic);
     };
   }, []);
 

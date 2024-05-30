@@ -1,9 +1,8 @@
 import React,  {useState} from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import logo from "../../assets/logo.png";
-import clickMenuSound from "../../assets/sounds/clickMenu.mp3";
 import "./navbar.css";
-import { useEffect } from "react";
+
 
 const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
