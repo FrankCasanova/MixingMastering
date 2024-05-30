@@ -25,13 +25,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     padding: 1rem;
     border: 1px solid #fff;
     text-align: center;
-
     margin-bottom: 10rem;
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Added transition for smooth effect */
 }
 
 .gpt3__footer-btn p {
@@ -40,7 +39,20 @@
     line-height: 21px;
     color: #fff;
     word-spacing: 2px;
+    transition: color 0.3s ease; /* Added transition for smooth effect */
 }
+
+/* Change the color of the button and the text inside it on hover */
+.gpt3__footer-btn:hover {
+    background-color: #ffffff; /* New background color on hover */
+    color: #031B34; /* New text color on hover */
+}
+
+.gpt3__footer-btn:hover p {
+    color: #031B34; /* Ensure the text color is consistent with the new hover state */
+}
+
+
 
 .gpt3__footer-links {
     display: flex;
@@ -100,6 +112,11 @@
 
     margin: 0.5rem 0;
     cursor: pointer;
+
+    transition: color 0.3s ease;
+}
+.gpt3__footer-links_div p:hover {
+    color: #FF8A71;
 }
 
 .gpt3__footer-copyright {

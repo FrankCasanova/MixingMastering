@@ -1,7 +1,7 @@
 import React from "react";
 import "./header.css";
 import people from "../../assets/people.png";
-import ai from "../../assets/ai.png";
+import mixing from "../../assets/mixingComp.mp4";
 const Header = () => {
     return (
         <div className="gpt3__header section__padding">
@@ -18,7 +18,7 @@ const Header = () => {
                 </div>
             </div>
             <div className="gpt3__header-image">
-                <img src={ai} alt="ai" />
+                <video autoPlay playsInline loop muted src={mixing} type="video/mp4"></video>
             </div>
         </div>
     )

@@ -7,23 +7,24 @@
 .gpt3__possibility-image {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 
 }
 
 .gpt3__possibility-image img {
-    width: 30%;
+    width: 100%;
     height: 100%;
     mask-image: linear-gradient(rgb(0, 0, 0), transparent);
     animation: text-focus-in 3.2s linear 0s 1 normal none;
+    margin-right: 1rem;
    
 }
 
 .gpt3__possibility-content {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-start;
     flex-direction: column;
 }
