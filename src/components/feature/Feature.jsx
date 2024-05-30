@@ -1,9 +1,12 @@
 import React from "react";
+import useIntersectionObserver from "../observer";
 import "./feature.css";
 
-const Feature = ( { imgUrl, title, text }) => {
+const Feature = ( {title, text }) => {
+    const [ref, isVisible] = useIntersectionObserver({ threshold: 0.1 });
+
     return (
-        <div className="gpt3__features-container__feature">
+        <div ref={ref} className={`gpt3__features-container__feature ${isVisible ? 'animate' : ''}`}>
             <div className="gpt3__features-container__feature-title">
                 <div />
                 <h1>{title}</h1>

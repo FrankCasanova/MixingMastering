@@ -1,4 +1,5 @@
 import React from 'react';
+import useIntersectionObserver from '../../components/observer';
 import Feature from '../../components/feature/Feature';
 import './features.css';
 
@@ -22,9 +23,10 @@ const featuresData = [
 ];
 
 const Features = () => {
+    const [ref, isVisible] = useIntersectionObserver({ threshold: 0.1 });
     return (
         <div className="gpt3__features section__padding" id="features">
-            <div className="gpt3__features-heading">
+            <div className={`gpt3__features-heading ${isVisible ? 'animate' : ''}`} ref={ref} id="gpt3__features-heading">
                 <h1 className="gradient__text">Transform Your Music Today. Step into the Future of Sound with Our Professional Services.</h1>
                 <p>Request Early Access to Get Started</p>
             </div>

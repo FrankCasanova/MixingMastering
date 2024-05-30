@@ -4,9 +4,14 @@
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: row;
-
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
     margin: 1rem;
 }
+.gpt3__features-container__feature.animate {
+    opacity: 1;
+}
+
 .gpt3__features-container__feature-title {
     flex: 1;
     max-width: 180px;
