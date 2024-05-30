@@ -54,6 +54,12 @@
     outline: none;
     cursor: pointer;
     min-width: 150px;
+
+    transition: all 0.3s ease;
+}
+.gpt3__cta-btn button:hover {
+    background: #fff;
+    color: #000;
 }
 
 @media screen and (max-width: 650px) {
