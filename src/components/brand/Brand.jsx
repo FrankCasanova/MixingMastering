@@ -1,5 +1,7 @@
 import React from "react";
 import { google, slack, atlassian, dropbox, shopify } from './imports';
+import {motion} from "framer-motion";
+import {fadeIn} from "../../variants.js"
 import "./brand.css";
 
 const Brand = () => {
@@ -8,22 +10,32 @@ const Brand = () => {
 
     return (
         
-        <div  className="gpt3__brand section__padding">
-            <div>
+        <div id="brand"  className="gpt3__brand section__padding">
+            <motion.div variants={fadeIn('up')}
+            initial="hidden"
+            whileInView={'show1'} viewport={{once: true, amount: 0.2}}>
                 <img src={google} />
-            </div>
-            <div>
+            </motion.div>
+            <motion.div variants={fadeIn('up')}
+            initial="hidden"
+            whileInView={'show12'} viewport={{once: true, amount: 0.2}}>
                 <img src={slack} />
-            </div>
-            <div>
+            </motion.div>
+            <motion.div variants={fadeIn('up')}
+            initial="hidden"
+            whileInView={'show13'} viewport={{once: true, amount: 0.2}}>
                 <img src={atlassian} />
-            </div>
-            <div>
+            </motion.div>
+            <motion.div variants={fadeIn('up')}
+            initial="hidden"
+            whileInView={'show14'} viewport={{once: true, amount: 0.2}}>
                 <img src={dropbox} />
-            </div>
-            <div>
+            </motion.div>
+            <motion.div variants={fadeIn('up')}
+            initial="hidden"
+            whileInView={'show15'} viewport={{once: true, amount: 0.2}}>
                 <img src={shopify} />
-            </div>
+            </motion.div>
         </div>
     )
 }

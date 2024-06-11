@@ -6,7 +6,7 @@ import logo from "../../assets/logo.png";
 // import css
 import "./navbar.css";
 //import motion
-import { motion } from "framer-motion";
+import { delay, motion } from "framer-motion";
 //import variants
 import {fadeIn} from "../../variants.js"
 
@@ -23,8 +23,8 @@ const Navbar = () => {
       <div className="gpt3__navbar-links">
         <motion.div variants={fadeIn('right')}
         initial="hidden"
-        whileInView={"show"}
-        viewport={{once: false, amount: 0.2}}
+        whileInView={"show1"}
+        viewport={{once: true, amount: 0.2}}
 
          className="gpt3__navbar-links_logo">
           <img src={logo} />
@@ -33,7 +33,7 @@ const Navbar = () => {
         variants={fadeIn('left')}
         initial="hidden"
         whileInView={"show"}
-        viewport={{once: false, amount: 0.2}} 
+        viewport={{once: true, amount: 0.2}} 
         className="gpt3__navbar-links_container">
           <p  className="item"><a href="#home">Home</a></p>
           <p  className="item"><a href="#wgpt3">What is Mixing and Mastering IA</a></p>

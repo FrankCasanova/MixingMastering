@@ -1,7 +1,10 @@
 import React from 'react';
-import useIntersectionObserver from '../../components/observer';
 import Feature from '../../components/feature/Feature';
 import './features.css';
+//import motion
+import { motion } from 'framer-motion';
+//import variants
+import { fadeIn } from '../../variants';
 
 const featuresData = [
     {
@@ -23,20 +26,22 @@ const featuresData = [
 ];
 
 const Features = () => {
-    const [ref, isVisible] = useIntersectionObserver({ threshold: 0.1 });
     return (
         <div className="gpt3__features section__padding" id="features">
-            <div className={`gpt3__features-heading ${isVisible ? 'animate' : ''}`} ref={ref} id="gpt3__features-heading">
-                <h1 className="gradient__text">Transform Your Music Today. Step into the Future of Sound with Our Professional Services.</h1>
-                <p>Request Early Access to Get Started</p>
+            <div className='gpt3__features-heading'  id="gpt3__features-heading">
+                <motion.h1 variants={fadeIn('right')}  initial="hidden" whileInView={"show"} viewport={{once: true, amount: 0.2}} className="gradient__text">Transform Your Music Today. Step into the Future of Sound with Our Professional Services.</motion.h1>
+                <a href="#possibility"><motion.p variants={fadeIn('left')} initial="hidden" whileInView={"show15"} viewport={{once: true, amount: 0.2}}>Lets Get In Touch</motion.p></a>
             </div>
             <div className="gpt3__features-container">
                 {featuresData.map((feature, index) => (
+                    <motion.div variants={fadeIn('up')} initial="hidden" whileInView={`show1${index+2}`} viewport={{once: true, amount: 0.2}} className="gpt3__features-container_feature">
                     <Feature
                         title={feature.title}
                         text={feature.text}
                         key={index}
+                    
                     />
+                    </motion.div>
                 ))}
             </div>
         </div>

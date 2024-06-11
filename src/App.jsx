@@ -27,7 +27,7 @@ const App = () => {
         <WhatIaWebpage />
         <Features />
         <Possibility />
-        <Cta />
+        {/* <Cta /> */}
         <Blog />
         <Footer />
       </div>
